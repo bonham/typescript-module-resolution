@@ -1,4 +1,4 @@
 function printCJS() {
-  console.log("Hi CommonJS")
+  console.log("Hi CJS file")
 }
 exports.printCJS = printCJS

@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/src/main.js",
-    "build": "tsc",
-    "tsnode": "ts-node ./src/main.ts"
+    "start-cjs": "tsc && node dist/src/main.cjs",
+    "tsnode-cjs": "ts-node ./src/main.cts",
+    "start-esm": "tsc && node dist/src/main.mjs",
+    "tsnode-esm": "ts-node-esm ./src/main.mts"
   },
   "keywords": [],
   "author": "",
