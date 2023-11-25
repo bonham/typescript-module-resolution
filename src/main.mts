@@ -1,8 +1,8 @@
 import { printMTS } from "./moduleMTS.mjs"
 import { printCJS } from './moduleCJS.cjs'
-// import { printCTS } from './moduleCTS.cjs'
-// const { printCTS } = require('./moduleCTS.cts') // ?
-console.log("hello")
+import { default as moduleCTS } from './moduleCTS.cjs'
+const typedModuleCTS = moduleCTS as { printCTS: () => void }
+
 printMTS()
 printCJS()
-// printCTS()
+typedModuleCTS.printCTS()
