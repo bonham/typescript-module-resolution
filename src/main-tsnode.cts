@@ -1,5 +1,5 @@
 const { printCJS } = require('./moduleCJS.cjs')
-const { printCTS } = require('./moduleCTS.cjs') // cjs extension for tsc
+const { printCTS } = require('./moduleCTS.cts') // cts extension for ts-node
 console.log("hello")
 printCJS()
 printCTS()
