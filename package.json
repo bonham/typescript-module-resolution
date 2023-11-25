@@ -6,6 +6,7 @@
   "scripts": {
     "start-cjs": "tsc && node dist/src/main.cjs",
     "tsnode-cjs": "ts-node ./src/main.cts",
+    "nodemon-cjs": "nodemon ./src/main.cts",
     "start-esm": "tsc && node dist/src/main.mjs",
     "tsnode-esm": "ts-node-esm ./src/main.mts"
   },
@@ -15,5 +16,8 @@
   "devDependencies": {
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1"
   }
 }
