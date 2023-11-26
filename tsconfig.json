@@ -7,7 +7,6 @@
     "strict": true,                                      /* Enable all strict type-checking options. */
     "outDir": "dist",
     "rootDir": "./",
-    "allowJs": true,
   },
   "include": ["src"]
 }

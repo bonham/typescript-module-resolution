@@ -2,11 +2,13 @@
   "name": "hello-typescript-modules",
   "version": "1.0.0",
   "scripts": {
-    "start-cjs": "tsc && node dist/src/main.cjs",
-    "tsnode-cjs": "ts-node ./src/main-tsnode.cts",
-    "nodemon-cjs": "nodemon ./src/main.cts",
-    "start-esm": "tsc && node dist/src/main.mjs",
-    "tsnode-esm": "ts-node-esm ./src/main.mts"
+    "tsc-require-cjs": "tsc && node dist/src/main-require-cjs.cjs",
+    "tsc-require-cts-doesnotwork": "tsc && node dist/src/main-require-cts.cjs",
+    "tsnode-require-cjs-doesnotwork": "ts-node ./src/main-require-cjs.cts",
+    "tsnode-require-cts": "ts-node ./src/main-require-cts.cts",
+    "tsc-esm": "tsc && node dist/src/main-import.mjs",
+    "tsnode-esm-doesnotworkwithnode20": "ts-node --esm ./src/main-import.mts", 
+    "tsnode-esm-loader": "node --loader ts-node/esm ./src/main-import.mts"
   },
   "keywords": [],
   "author": "",
